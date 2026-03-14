@@ -1,0 +1,274 @@
+Nižšie sa nachádza séria párov inštrukcia-odpoveď. Tvojou úlohou je naučiť sa odpovedať na inštrukcie presne tak, ako je uvedené v odpovedi.
+
+Instruction:
+Ako sa vykonáva cvik Maľovanie jazykom a na čo slúži?
+Response:
+Dieťa široko otvorí ústa. Špičku jazyka pritlačí o podnebie hneď za horné rezáky a plynulým pohybom prechádza smerom dozadu k hrdlu a späť. Pery sú nehybné v širokom otvorení, pracuje len jazyk. Slúži na posilnenie svalstva koreňa jazyka a jeho ohybnosť.
+
+Instruction:
+Popíš techniku Hojdačka a jej vplyv na koordináciu jazyka.
+Response:
+Dieťa otvorí ústa, vyplazí jazyk a špičkou sa pomaly dotýka najprv pravého kútika spodnej pery a potom ľavého kútika. Čelust by sa nemala hýbať. Týmto cvikom sa dieťa učí kontrolovať horizontálny pohyb jazyka nezávisle od pohybu sánky.
+
+
+Instruction:
+Čo je to Obrátená hojdačka a ako majú byť nastavené pery?
+Response:
+Pery sú otvorené. Špička jazyka smeruje nahor k nosu a kopíruje líniu hornej pery v smere sprava doľava a späť. Je dôležité, aby sa jazyk skutočne dotýkal pery a nesmeroval len do vzduchu. Pomáha to pri nácviku hlások vyžadujúcich polohu jazyka hore (L, R, Š).
+
+Instruction:
+Vysvetli cvik Hrče so zameraním na prácu svalov tváre.
+Response:
+Dieťa má pery pevne zatvorené. Jazykom silno tlačí zvnútra do pravej steny tváre, potom do ľavej. Následne urobí hrču pod nosom a nakoniec nad bradou. Pery sa nesmú rozpojiť. Cvik zvyšuje silu jazyka a tonus lícnych svalov.
+
+Instruction:
+Ako sa nacvičuje cvik Čert a prečo je dôležitý dotyk hornej pery?
+Response:
+Dieťa pootvorí ústa a veľmi rýchlo vysúva a schováva jazyk. Pri každom vysunutí špička jazyka brnkne o hornú peru (vydáva zvuk bl-bl-bl). Dotyk hornej pery núti jazyk k vertikálnemu pohybu, čo je príprava na kmitanie pri hláske R.
+
+Instruction:
+Popíš techniku Mištička a presnú polohu jazyka v ústach.
+Response:
+Ústa sú otvorené. Jazyk leží na dne úst, ale jeho okraje (boky) a špička sa nadvihnú nahor. Stred jazyka zostáva preliačený nadol, čím vznikne tvar misky. Pery sú v kľude. Tento cvik je nevyhnutný pre správne smerovanie prúdu vzduchu pri sykavkách.
+
+Instruction:
+Ako sa nacvičuje Rolovanie jazyka do špičky?
+Response:
+Dieťa vyplazí jazyk a snaží sa jeho bočné strany zrolovať smerom k sebe tak, aby vytvorilo ruličku alebo ostrú špičku. Potom jazyk vtiahne späť bez toho, aby ruličku rozpojilo. Rozvíja to jemnú motoriku svalových vlákien v tele jazyka.
+
+Instruction:
+Popíš cvik Stiahnuté pery s vyplazeným jazykom.
+Response:
+Dieťa silno stiahne pery (urobí ich úzke a pevné) a cez túto malú štrbinu sa snaží vyplaziť jazyk čo najďalej vpred a opäť ho vtiahnuť. Pery musia klásť jazyku odpor.
+
+Instruction:
+Ako správne nafukovať líca pri logopedickom cvičení?
+Response:
+Ústa musia byť nepriedušne zatvorené. Dieťa najprv nafúkne pravé líce (ako balón), potom ľavé a nakoniec obe naraz. Vzduch nesmie unikať cez pery ani cez nos. Posilňuje to kruhový sval úst.
+
+Instruction:
+Vysvetli striedanie špúlenia a rozťahovania pier pri hláskach O, E, U, I.
+Response:
+Dieťa prehnane artikuluje: pri O a U pery vysunie vpred a zaokrúhli do malého krúžku (ako lievik). Pri E a I roztiahne kútiky pier čo najviac do strán až k ušiam (široký úsmev), pričom zuby sú mierne viditeľné. Tým sa striedá napätie a uvoľnenie pier.
+
+Instruction:
+Ako sa nacvičuje Posielanie pusy a čo pri tom robí jazyk?
+Response:
+Pery sa silno vyšpúlia dopredu, pevne sa pritlačia k sebe a následne sa s hlasným cmuknutím uvoľnia. Jazyk je počas celého cviku v pokojovej polohe na dne úst a nezasahuje do pohybu pier.
+
+Instruction:
+Popíš techniku nácviku pískania z logopedického hľadiska.
+Response:
+Pery sa našpúlia do veľmi malého a pevného otvoru. Jazyk sa mierne nadvihne, aby vytvoril štrbinu. Dieťa jemne vydychuje vzduch cez tento malý otvor pier. Cvik učí dieťa precízne ovládať svaly pier a smerovať prúd vzduchu.
+
+Instruction:
+Vysvetli techniku Prskanie a jej cieľ.
+Response:
+Pery sú voľne priložené k sebe (nie sú zaťaté). Dieťa prudko vydýchne vzduch tak, aby sa pery rozkmitali a vydali zvuk ako motor auta (brrr). Cieľom je uvoľniť napätie v perách a pripraviť ich na vibráciu.
+
+Instruction:
+Ako pomáha kloktanie vody pri logopédii?
+Response:
+Pri kloktaní sa aktívne zapája mäkké podnebie, ktoré sa dvíha a klesá, aby zabránilo zatečeniu vody do nosohltana. Tento pohyb posilňuje svalstvo, ktoré je zodpovedné za správnu rezonanciu a zabraňuje fufňavosti.
+
+Instruction:
+Prečo je pitie slamkou logopedickým cvičením?
+Response:
+Pitie cez slamku vyžaduje silný podtlak, ktorý vytvárajú pery (pevné zovretie slamky) a jazyk (pohyb dozadu). Zároveň sa pri prehĺtaní aktivuje svalstvo hrdla a mäkkého podnebia.
+
+Instruction:
+Popíš dychovú hru so slamkou a bublinkami vo vode.
+Response:
+Dieťa ponorí slamku do pohára s vodou a plynule do nej fúka tak, aby vytváralo rovnomerné bublinky. Pery musia slamku pevne zvierať, aby vzduch neunikal bokom. Cieľom je regulácia sily a dĺžky výdychového prúdu.
+
+Instruction:
+Uveď zoznam pomôcok na dychové cvičenia a ich využitie.
+Response:
+Bublifuk: Nácvik dlhého a jemného výdychu.
+Píšťalka/Harmonika: Nácvik prudkého výdychu a striedania intenzity.
+Pierka/Papieriky: Fúkanie do nich na stole – nácvik smerovania prúdu vzduchu.
+Zrkadlo: Na kontrolu zahmlievania (výdych nosom vs. ústami).
+Vrtuľka: Nácvik plynulého, neprerušovaného výdychu.
+
+Instruction:
+Popíš presnú artikuláciu hlásky B (pery a jazyk).
+Response:
+Pery: Sú pevne spojené, čím vytvoria prekážku výdychovému prúdu. Vzduch sa nahromadí za perami. Následne sa pery prudko rozpoja. Jazyk: Počas výslovnosti leží voľne na dne úst, jeho špička sa nedotýka podnebia.
+
+Instruction:
+Uveď slová na nácvik B v rôznych pozíciách.
+Response:
+Na začiatku: Banán, bubon, budík, bomba, bábika. V strede: Jablko, bonbón, kabelka, huby. Na konci (spodoba): Klobúk (vyslovujeme ako P).
+
+Instruction:
+Uveď vety na fixáciu hlásky B.
+Response:
+1. Barborka bubnuje na bubon. 2. Banán je v kabelke. 3. Bábika má modrý balón.
+
+Instruction:
+Povedz mi riekanku o bubnovaní na precvičenie B.
+Response:
+Bubnujeme na bubon, poďte deti, poďte von. Bubnujeme bum, bum, bom, budeme mať nový dom. A kto s nami nepôjde, ten v ňom bývať nebude.
+
+Instruction:
+Vysvetli vzťah medzi hláskou Ť a Č pri nácviku.
+Response:
+Hláska Č sa vyvíja z hlásky Ť. Keď dieťa prudko a krátko vyslovuje Ť-Ť-Ť so správnym nastavením pier, zvuk sa prirodzene zmení na Č. Cvičíme: ťu -> ču, ťa -> ča, ťo -> čo, te -> če, ti -> či.
+
+Instruction:
+Popíš polohu pier a jazyka pri hláske Č.
+Response:
+Pery: Sú mierne zaokrúhlené a vysunuté dopredu (do lievika). Jazyk: Špička jazyka sa nadvihne a pevne oprie o ďasná za hornými rezákmi. Pri výslovnosti sa prudko odlepí. Jazyk nesmie byť medzi zubami. Zuby: Horné a dolné zuby sú veľmi blízko seba (takmer v skuse).
+
+Instruction:
+Ako skontrolovať správnu výslovnosť Č pomocou ruky?
+Response:
+Dieťa si priloží chrbát ruky pred ústa. Pri správnom Č musí cítiť teplý vzduch, ktorý vyjde von nárazovo.
+
+Instruction:
+Uveď zvukomalebné cvičenia pre hlásku Č.
+Response:
+Voda: čľap – čľap, čľup – čľup. Uspávanie: či – či, či – či. Vrabec: čim – čim – čim. Kačka: kač – kač.
+
+Instruction:
+Povedz riekanku o potôčiku na hlásku Č.
+Response:
+V potôčiku voda tečie. Čo to vidím? Dačo vlečie. Dolu vodou pláva čiapka. Člipky čľapky, čiapka čľapká.
+
+Instruction:
+Popíš polohu pier a jazyka pri ostrej sykavke S.
+Response:
+Pery: Kútiky sú roztiahnuté do širokého úsmevu. Jazyk: Špička jazyka je opretá o vnútornú stranu dolných rezákov. Stred jazyka sa mierne prehne, čím vytvorí úzky žliabok pre vzduch. Zuby: Sú v tesnom skuse (horné rezáky nad dolnými).
+
+
+Instruction:
+Aký vzduch cítime pri hláske S a ako ho otestovať?
+Response:
+Pri hláske S vydychujeme vzduch cez úzku štrbinu. Na chrbte ruky musí dieťa cítiť studený prúd vzduchu.
+
+Instruction:
+Uveď riekanku o syseľovi na hlásku S.
+Response:
+Stavia syseľ synom dom, sedem sýpok bude v ňom. Kým sneh, fujak bude viať, sýte sysle musia spať.
+
+Instruction:
+Hádanka: Sype sa ako múka, guľovať sa nám núka. Čo je to?
+Response:
+Sneh. (Slovo obsahuje hlásku S na začiatku).
+
+Instruction:
+Uveď vety z príbehu o Soni na fixáciu hlásky S.
+Response:
+1. Soňa dostala nové sane. 2. Vonku sa sypal sneh. 3. Sultán je môj verný psík. 4. Postavili sme osem snehuliakov.
+
+Instruction:
+Aké sú hlavné podmienky pre výslovnosť hlásky R?
+Response:
+Ústa: Musia byť otvorené (horné a dolné zuby od seba). Jazyk: Špička jazyka musí byť nadvihnutá hore za horné zuby (na ďasná). Stav: Jazyk musí byť uvoľnený, nie kŕčovitý, aby mohol kmitať.
+
+Instruction:
+Vysvetli techniku nácviku R cez hlásku D (ťukanie).
+Response:
+Dieťa namiesto R vyslovuje veľmi jemné a krátke D. Jazyk ťuká na to isté miesto hore za zubami. Cvičíme: td, td, td, tda, tde, tdy, tdo, tdu. Prízvuk je na prvej hláske.
+
+Instruction:
+Ako pomáha fŕkanie pri nácviku hlásky R?
+Response:
+Fŕkanie pier (ako koník) učí dieťa mechanizmu vibrácie. Keď dieťa fŕka perami, snažíme sa, aby špičku jazyka vložilo medzi pery – vibrácia z pier sa prenesie na jazyk, čo je prvý krok k jeho rozkmitaniu.
+
+Instruction:
+Uveď riekanku o vrane na nácvik hlásky R.
+Response:
+Pri hrade je stará brána, kráka na nej čierna vrana, vrana kričí krá, krá, krák, letí k hradu čierny mrak.
+
+Instruction:
+Popíš logogymnastiku spojenú s riekankou o vrane.
+Response:
+Dieťa recituje riekanku a zároveň: 1. Behá a máva upaženými rukami (ako krídla). 2. Pochoduje s rovným chrbtom. 3. Jednou rukou salutuje.
+
+Instruction:
+Povedz riekanku o oráčovi na fixáciu hlásky R.
+Response:
+Orie oráč na úhore, úhor je sťa šíre more. Dlho oral, zoral málo, rúchadlo sa dodrúzgalo.
+
+Instruction:
+Vysvetli techniku Sloníky pre nácvik hlásky Š.
+Response:
+Dieťa si predstaví, že má chobot. Pery pevne našpúli dopredu (ako lievik). Jazyk zdvihne hore za horné rezáky. Pri výdychu napodobňuje zvuk vlaku (ššššš). Výdychový prúd je široký a teplý.
+
+
+Instruction:
+V čom sa líši poloha jazyka pri S a Š?
+Response:
+Pri S je špička jazyka dolu (za spodnými zubami) a kútiky pier sú v úsmeve. Pri Š je špička jazyka hore (za hornými zubami) a pery sú našpúlené vpred.
+
+Instruction:
+Uveď artikulačné cvičenie Vláčik pre hlásku Š.
+Response:
+1. Rozbeh: š-š-š-š-š. 2. V pohybe: ši-ši, ši-ši. 3. Brzdenie: čššššš.
+
+Instruction:
+Povedz riekanku o líškach na hlásku Š.
+Response:
+Po pešníčku k lesíčku, nesie lišiak kapsičku. Beží lišiak do chyžky, tešia sa už líšky, doniesol im v kapsičke pekné žlté šišky.
+
+Instruction:
+Popíš gymnastiku jazýčka v jeho domčeku (príbeh na P).
+Response:
+Jazyk vyjde z domčeka (vyplaziť), pozrie hore na slnko (špička k nosu), pozrie dolu na mláku (špička k brade). Potom si zajazdí na koni (mlaskanie o podnebie) a vráti sa domov (zatvoriť ústa).
+
+Instruction:
+Vysvetli hru Hláska P nás prebudí.
+Response:
+Dieťa leží na zemi a predstiera spánok. Rodič hovorí slová. Keď dieťa počuje slovo začínajúce na P (napr. pes, papuča), musí rýchlo vyskočiť. Cvičí sa tým fonematické uvedomovanie.
+
+Instruction:
+Uveď slová s hláskou P v rôznych pozíciách.
+Response:
+Začiatok: Písanka, pavúk, papuča, peniaze, Paľko. Stred: Lupeň, chalupa, kopa, klope. Koniec: Chlap, cup, dup.
+
+Instruction:
+Povedz riekanku o daždi na hlásku P.
+Response:
+Cupi-lupi do chalupy, cupi-lupi domov bež! Ja som zmokol, ty si zmokla, kto nebeží – zmokne tiež.
+
+Instruction:
+Povedz riekanku na hlásku A (Auto).
+Response:
+Auto ide, sláva, sláva, tata máva, mama máva. Auto ide tú-tú-tú, tata, mama už je tu.
+
+Instruction:
+Povedz riekanku na hlásku M (Medvieďa).
+Response:
+Malinké medvieďa z medu si ujedá. Medvieďa malinké, túli sa k maminke.
+
+Instruction:
+Povedz riekanku na hlásku F (Fujavica).
+Response:
+Fujavica, fujavica, líca štípu, pália líca. Snehuliak sa smeje, jemu zima nie je.
+
+Instruction:
+Ako sa nacvičuje hláska K? Uveď príklad riekanky.
+Response:
+Pri K je dôležitý chrbát jazyka, ktorý sa oprie o mäkké podnebie. Riekanka: Kujem, kujem podkovičku, koníkovi na nožičku. Kujem, kujem vesele, zo železa, z ocele.
+
+Instruction:
+Povedz riekanku na hlásku CH (Chichot).
+Response:
+Chacha chacha, chichi chichi, chichoce sa chlapec tichý. Pošteklil mi otec ľavú pazuchu.
+
+Instruction:
+Ako sa správne vyslovujú hlásky Ď, Ť, Ň?
+Response:
+Sú to mäkké hlásky. Špička jazyka sa neprikladá k zubom, ale celá predná plocha jazyka sa široko oprie o horné podnebie. Riekanka: Ďobe ďateľ vyďobáva, na jabloni ďob, ďob, ďob.
+
+Instruction:
+Povedz riekanku na hlásku G (Guma).
+Response:
+Gusto novú loptu má, je to lopta gumená. Len čo z domu vybehol, dal gumenou loptou gól.
+
+Instruction:
+Povedz riekanku na hlásku L (Motýľ).
+Response:
+Biely motýľ obletel dookola mlyn, biela sliepka za mlynom viedla reči s ním.
+

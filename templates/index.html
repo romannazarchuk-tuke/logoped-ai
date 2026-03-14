@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Logopedický Asistent</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="{{ url_for('static', filename='icon.png') }}?v=1"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      href="{{ url_for('static', filename='icon.png') }}?v=1"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body class="dark-theme">
+    <button class="mobile-menu-btn" onclick="toggleSidebar()" aria-label="Menu">
+      <span>☰</span>
+    </button>
+
+    <div class="app-wrapper">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <div class="model-selector">
+            <label class="model-label">Model AI:</label>
+
+            <div class="custom-dropdown" id="custom-model-dropdown">
+              <div class="dropdown-selected" id="dropdown-selected">
+                <span>Univerzitný model (Qwen3.5)</span>
+                <span class="dropdown-arrow">▼</span>
+              </div>
+
+              <ul class="dropdown-options" id="dropdown-options">
+                <li data-value="model2" class="selected">
+                  Univerzitný model (Qwen3.5)
+                </li>
+                <li data-value="gemini-3-flash-preview">Gemini 3 Flash</li>
+                <li data-value="gemini-3.1-flash-lite-preview">
+                  Gemini 3.1 Flash Lite
+                </li>
+              </ul>
+            </div>
+
+            <input type="hidden" id="ai-model" value="model2" />
+          </div>
+
+          <button class="new-chat-btn" onclick="createNewChat()">
+            + Nový chat
+          </button>
+        </div>
+
+        <div class="history-list" id="history-list"></div>
+
+        <div class="sidebar-footer">
+          <button id="about-btn" class="nav-btn" onclick="openAboutModal()">
+            <i
+              class="fas fa-info-circle"
+              style="width: 20px; text-align: center; margin-right: 5px"
+            ></i>
+            O projekte
+          </button>
+
+          <button id="theme-toggle" class="nav-btn">
+            <i
+              class="fas fa-moon"
+              style="width: 20px; text-align: center; margin-right: 5px"
+            ></i>
+            Zmeniť tému
+          </button>
+
+          <div class="user-profile">
+            <div class="user-avatar">{{ session['username'][0].upper() }}</div>
+            <div class="user-info">
+              <span class="username">{{ session['username'] }}</span>
+              <a href="/logout" class="logout-link">Odhlásiť sa</a>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
+
+      <main class="chat-main">
+        <div class="chat-container" id="chat-container"></div>
+
+        <div id="loading" style="display: none">
+          <div class="spinner-wrapper">
+            <div class="spinner"></div>
+            <div class="loading-text">Model premýšľa...</div>
+          </div>
+        </div>
+
+        <div class="input-area">
+          <div class="input-wrapper">
+            <input
+              type="text"
+              id="user-input"
+              placeholder="Napíšte otázku..."
+              onkeypress="handleKeyPress(event)"
+              autocomplete="off"
+            />
+            <button id="send-btn" onclick="sendMessage()">➤</button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div
+      id="about-modal"
+      class="modal-overlay"
+      onclick="closeAboutModal(event)"
+    >
+      <div class="modal-content" onclick="event.stopPropagation()">
+        <button class="modal-close" onclick="closeAboutModal()">×</button>
+        <h2>O projekte</h2>
+
+        <p>
+          Táto stránka je výsledkom bakalárskej práce študenta
+          <strong>Nazarchuka Romana</strong> pod vedením školiteľa
+          <strong>Ing. Stanislava Ondáša, PhD.</strong>
+        </p>
+        <p>
+          Bakalárská práca je riešená na katedre <strong>KPS</strong>, FEI TU v
+          Košiciach, rok 2026.
+        </p>
+
+        <h3>Ako funguje umelá inteligencia (AI)?</h3>
+        <p>
+          Tento asistent využíva pokročilé jazykové modely (Google Gemini a
+          Univerzitný model Qwen3.5). Systém je prepojený s odbornou
+          logopedickou databázou, ktorá bola zostavená z odbornej literatúry a
+          článkov z voľne dostupných zdrojov. Z nej pomocou inteligentného
+          vyhľadávania generuje presné a overené cvičenia pre konkrétne hlásky.
+        </p>
+
+        <h3>Grantová podpora</h3>
+        <p>
+          Táto práca vznikla v rámci riešenia projektu
+          <strong>3PoCube APVV-22-0261</strong>.
+        </p>
+
+        <h3>Užitočné odkazy</h3>
+        <ul class="modal-links">
+          <li>
+            <a href="https://nlp.kemt.fei.tuke.sk/audiometry" target="_blank"
+              >Audiometry | KEMT NLP</a
+            >
+          </li>
+          <li>
+            <a href="https://kps.fei.tuke.sk/" target="_blank"
+              >Katedra KPS | FEI TUKE</a
+            >
+          </li>
+        </ul>
+
+        <h3>Kontakt</h3>
+        <p>
+          Pre dotazy a pripomienky nás neváhajte kontaktovať na email:
+          <a href="mailto:stanislav.ondas@tuke.sk">stanislav.ondas@tuke.sk</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>

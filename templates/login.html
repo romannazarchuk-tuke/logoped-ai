@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Prihlásenie - Logopedický Asistent</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="{{ url_for('static', filename='icon.png') }}?v=1"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="{{ url_for('static', filename='icon.png') }}?v=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body class="auth-page">
+    <div class="auth-container">
+      <h2
+        style="
+          font-size: 1.3rem;
+          margin-bottom: 5px;
+          color: var(--accent-color);
+          text-align: center;
+        "
+      >
+        Experimentálny AI logopedický asistent
+      </h2>
+      <h1>Vitajte späť</h1>
+
+      <form action="/login" method="POST">
+        <div class="input-group">
+          <input
+            type="text"
+            name="username"
+            placeholder="Používateľské meno"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Heslo"
+            required
+          />
+          <button
+            type="button"
+            class="password-toggle"
+            id="togglePasswordBtn"
+            onclick="togglePasswordVisibility()"
+          >
+            <i class="fas fa-eye" id="eyeIcon"></i>
+          </button>
+        </div>
+
+        <button type="submit" class="auth-btn">Prihlásiť sa</button>
+      </form>
+
+      <div class="auth-links" style="margin-top: 20px">
+        <p>
+          Nemáte účet? <a href="{{ url_for('register') }}">Zaregistrujte sa</a>
+        </p>
+      </div>
+
+      <div style="text-align: center; margin-top: 15px">
+        <a
+          href="#"
+          onclick="openAboutModal(); return false;"
+          style="
+            color: #8e8ea0;
+            font-size: 0.95rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+          "
+        >
+          <i class="fas fa-info-circle"></i> O projekte
+        </a>
+      </div>
+    </div>
+
+    <div
+      class="modal-overlay"
+      id="about-modal"
+      onclick="closeAboutModal(event)"
+    >
+      <div class="modal-content" style="text-align: left">
+        <button class="modal-close" onclick="closeAboutModal()">&times;</button>
+        <h2 style="margin-top: 0; color: var(--accent-color)">O projekte</h2>
+
+        <p>
+          Táto stránka je výsledkom bakalárskej práce študenta
+          <strong>Nazarchuka Romana</strong> pod vedením školiteľa
+          <strong>Ing. Stanislava Ondáša, PhD.</strong>
+        </p>
+        <p>
+          Bakalárská práca je riešená na katedre <strong>KPS</strong>, FEI TU v
+          Košiciach, rok 2026.
+        </p>
+
+        <h3>Ako funguje umelá inteligencia (AI)?</h3>
+        <p>
+          Tento asistent využíva pokročilé jazykové modely (Google Gemini a
+          Univerzitný model Qwen3.5). Systém je prepojený s odbornou
+          logopedickou databázou, ktorá bola zostavená z odbornej literatúry a
+          článkov z voľne dostupných zdrojov. Z nej pomocou inteligentného
+          vyhľadávania generuje presné a overené cvičenia pre konkrétne hlásky.
+        </p>
+
+        <h3>Grantová podpora</h3>
+        <p>
+          Táto práca vznikla v rámci riešenia projektu
+          <strong>3PoCube APVV-22-0261</strong>.
+        </p>
+
+        <h3>Užitočné odkazy</h3>
+        <ul class="modal-links">
+          <li>
+            <a href="https://nlp.kemt.fei.tuke.sk/audiometry" target="_blank"
+              >Audiometry | KEMT NLP</a
+            >
+          </li>
+          <li>
+            <a href="https://kps.fei.tuke.sk/" target="_blank"
+              >Katedra KPS | FEI TUKE</a
+            >
+          </li>
+        </ul>
+
+        <h3>Kontakt</h3>
+        <p>
+          Pre dotazy a pripomienky nás neváhajte kontaktovať na email:
+          <a href="mailto:stanislav.ondas@tuke.sk">stanislav.ondas@tuke.sk</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
