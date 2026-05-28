@@ -54,7 +54,6 @@ UNI_API_URL = "https://ui.tukekemt.xyz/api/v1/chat/completions"
 KNOWLEDGE_CHUNKS = []
 
 def stem_slovak(word):
-    """Удаляет диакритику и частые окончания словацкого языка для получения корня"""
     word = unicodedata.normalize('NFKD', word).encode('ASCII', 'ignore').decode('utf-8').lower()
     
     endings = ['iach', 'iam', 'och', 'ach', 'ich', 'ych', 'ovi', 'ami', 'emi', 'ou', 'om', 'am', 'em', 'ia', 'ie', 'iu', 'ov', 'y', 'a', 'e', 'i', 'u', 'o']
@@ -92,10 +91,9 @@ def load_and_chunk_knowledge():
                     stems = [stem_slovak(w) for w in words]
                     chunks.append({"text": current_chunk.strip(), "stems": Counter(stems)})
         else:
-            print(f"Внимание: Файл {filepath} не найден!")
+            print(f" {filepath} do not find!")
             
     KNOWLEDGE_CHUNKS = chunks
-    print(f"Умная база данных загружена: {len(KNOWLEDGE_CHUNKS)} фрагментов.")
 
 def retrieve_relevant_chunks(query, top_k=3):
     if not KNOWLEDGE_CHUNKS:
@@ -281,7 +279,7 @@ def chat():
                     'Authorization': f'Bearer {UNI_API_KEY}'
                 }
                 api_payload = {
-                    "model": "model2",
+                    "model": "model120-fast",
                     "messages": uni_messages,
                     "stream": True
                 }
