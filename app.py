@@ -46,9 +46,9 @@ class Message(db.Model):
 with app.app_context():
     db.create_all()
 
-GEMINI_API_KEY = "AIzaSyC1fZ3ZidV8ZOWBoKtSOJLIzEMnnVuiAcc" 
-UNI_API_KEY = "sk-abddb571900c4b79a00b0449d80f3f6c"
-UNI_API_URL = "https://ui.tukekemt.xyz/api/v1/chat/completions"
+GEMINI_API_KEY = "" 
+UNI_API_KEY = ""
+UNI_API_URL = ""
 
 
 KNOWLEDGE_CHUNKS = []
