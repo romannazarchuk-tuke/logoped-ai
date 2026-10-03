@@ -1,65 +1,65 @@
 # AI Logoped Assistant 🎙️
 
-Интеллектуальный логопедический помощник (веб-приложение), разработанный для использования в качестве «со-терапевта» во время домашних занятий по развитию речи. В проекте используется архитектура RAG (Retrieval-Augmented Generation) и собственный алгоритм стемминга, обеспечивающие безопасную, методологически точную и свободную от галлюцинаций выдачу упражнений на словацком языке.
+An AI-powered web application designed to act as a "co-therapist" for home speech therapy sessions. This project utilizes a Retrieval-Augmented Generation (RAG) architecture and a custom linguistic stemming algorithm to provide safe, methodologically accurate, and hallucination-free logopedic exercises in the Slovak language.
 
-Проект разработан в рамках бакалаврской работы в Техническом университете Кошице (TUKE), факультет электротехники и информатики.
+Developed as a Bachelor's Thesis at the Technical University of Košice (TUKE), Faculty of Electrical Engineering and Informatics.
 
-## 🚀 Ключевые особенности
+## 🚀 Key Features
 
-* **База знаний на основе RAG:** Интеграция 19 экспертных логопедических документов. LLM выступает в роли «архитектора формата» и извлекает факты только из проверенных медицинских и образовательных методик.
-* **Собственный алгоритм стемминга (`stem_slovak`):** Специальный эвристический алгоритм нормализации, разработанный для словацкого языка, обеспечивающий сверхбыстрый поиск с эффективным использованием памяти без тяжелых NLP-библиотек.
-* **Отсутствие галлюцинаций и чистота языка:** Продвинутый промпт-инжиниринг исключает языковое вмешательство (богемизмы) и предотвращает генерацию несуществующих упражнений.
-* **Методологический пайплайн:** Строгая структура вывода: *Инструкции ➔ Оромоторные упражнения ➔ Слоги ➔ Слова ➔ Стихотворения*.
-* **Real-Time UX (SSE):** Использование Server-Sent Events для асинхронного потокового вывода токенов (эффект «печатания») с временем до первого токена менее 2 секунд.
-* **Память сессий и интерактивный UI:** Управление контекстом с помощью SQLite. Бэкенд динамически генерирует интерактивные кнопки с уточняющими вопросами, снижая когнитивную нагрузку на родителей.
+* **RAG-Powered Knowledge Base:** Integrates 19 expert logopedic documents, ensuring the LLM acts strictly as a "format architect" and draws facts only from verified medical/educational methodologies.
+* **Custom Slovak Stemming (`stem_slovak`):** A bespoke heuristic normalization algorithm designed for the highly inflective Slovak language, enabling ultra-fast, memory-efficient term-frequency searching without relying on heavy external NLP libraries.
+* **Zero Hallucinations & Language Purity:** Advanced structured prompt engineering completely eliminates language interference (Bohemisms) and prevents the generation of non-existent exercises.
+* **Methodological Pipeline:** Enforces a strict output structure: *Instructions ➔ Oromotor Exercises ➔ Syllables ➔ Words ➔ Poems*.
+* **Real-Time UX (SSE):** Utilizes Server-Sent Events for asynchronous token streaming, providing a dynamic "typing" effect with a Time-to-First-Token under 2 seconds.
+* **Session Memory & Interactive UI:** SQLite-backed context management maintains conversation history, while the backend dynamically generates clickable follow-up questions to reduce the cognitive load on parents.
 
-## 🛠 Технологический стек
+## 🛠 Tech Stack
 
-**Бэкенд и данные:**
+**Backend & Data:**
 * Python / Flask
-* SQLAlchemy (ORM и защита от SQL-инъекций)
-* SQLite (Сохранение сессий)
+* SQLAlchemy (ORM & SQL Injection protection)
+* SQLite (Session persistence)
 
-**ИИ и архитектура:**
-* Модель Qwen 3.5 (развернутая через Open WebUI на выделенном сервере)
-* Кастомный пайплайн RAG
-* Эвристический стеммер (`stem_slovak`)
+**AI & Architecture:**
+* Qwen 3.5 LLM (Hosted via Open WebUI on a dedicated server)
+* Custom RAG Pipeline
+* Heuristic Stemmer (`stem_slovak`)
 
-**Инфраструктура:**
-* Docker и Docker Compose (полная контейнеризация для простого развертывания)
+**Infrastructure:**
+* Docker & Docker Compose (Fully containerized for seamless portability)
 
-## 🏗 Архитектура приложения
+## 🏗 Architecture Flow
 
-1. **Запрос пользователя:** Родитель выбирает звук или задает вопрос по терапии.
-2. **Поиск:** Бэкенд обрабатывает запрос с помощью алгоритма `stem_slovak` и извлекает наиболее релевантные фрагменты из логопедической базы знаний.
-3. **Промпт-инъекция:** Найденный контекст и строгие системные ограничения внедряются в промпт.
-4. **Генерация LLM:** Модель Qwen 3.5 обрабатывает структурированный промпт.
-5. **Потоковый ответ:** Результат возвращается пользователю через SSE вместе с динамически сгенерированными интерактивными кнопками.
+1. **User Query:** Parent selects a sound or asks a therapy-related question.
+2. **Retrieval:** The backend processes the query using the `stem_slovak` algorithm and retrieves the most relevant chunks from the logopedic knowledge base.
+3. **Prompt Injection:** Retrieved context and strict system restrictions are injected into the prompt.
+4. **LLM Generation:** The Qwen 3.5 model processes the structured prompt.
+5. **Streaming Response:** The output is streamed back to the user via SSE, accompanied by dynamically generated interactive follow-up buttons.
 
-## 💻 Установка и запуск (Локально)
+## 💻 Installation and Setup (Local)
 
-1. Клонируйте репозиторий:
+1. Clone the repository:
    ```bash
    git clone https://github.com/romannazarchuk-tuke/logoped-ai.git
    cd logoped-ai
    ```
-2. Установите зависимости:
+2. Install the dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-3. Запустите Flask сервер:
+3. Run the Flask server:
    ```bash
    python app.py
    ```
-4. Откройте приложение в браузере по адресу `http://127.0.0.1:5000`
+4. Open the application in your browser at `http://127.0.0.1:5000`
 
-## 🐳 Запуск через Docker
+## 🐳 Running with Docker
 
 ```bash
 docker build -t logoped-ai .
 docker run -p 5000:5000 logoped-ai
 ```
 
-## 👨‍💻 Автор
+## 👨‍💻 Author
 **Roman Nazarchuk**  
-Технический университет Кошице (TUKE)
+Technical University of Košice (TUKE)
