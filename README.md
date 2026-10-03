@@ -1,64 +1,37 @@
-# Logoped AI
+# AI Logoped Assistant 🎙️
 
-Интеллектуальный логопедический помощник (веб-приложение). Проект представляет собой платформу для взаимодействия и помощи в логопедических задачах.
+An AI-powered web application designed to act as a "co-therapist" for home speech therapy sessions. This project utilizes a Retrieval-Augmented Generation (RAG) architecture and a custom linguistic stemming algorithm to provide safe, methodologically accurate, and hallucination-free logopedic exercises in the Slovak language.
 
-## Технологии
+Developed as a Bachelor's Thesis at the Technical University of Košice (TUKE), Faculty of Electrical Engineering and Informatics.
 
-- **Backend**: Python, Flask
-- **База данных**: SQLite (с использованием Flask-SQLAlchemy)
-- **Безопасность**: Werkzeug (хеширование паролей)
+## 🚀 Key Features
 
-## Структура проекта
+* **RAG-Powered Knowledge Base:** Integrates 19 expert logopedic documents, ensuring the LLM acts strictly as a "format architect" and draws facts only from verified medical/educational methodologies.
+* **Custom Slovak Stemming (`stem_slovak`):** A bespoke heuristic normalization algorithm designed for the highly inflective Slovak language, enabling ultra-fast, memory-efficient term-frequency searching without relying on heavy external NLP libraries.
+* **Zero Hallucinations & Language Purity:** Advanced structured prompt engineering completely eliminates language interference (Bohemisms) and prevents the generation of non-existent exercises.
+* **Methodological Pipeline:** Enforces a strict output structure: *Instructions ➔ Oromotor Exercises ➔ Syllables ➔ Words ➔ Poems*.
+* **Real-Time UX (SSE):** Utilizes Server-Sent Events for asynchronous token streaming, providing a dynamic "typing" effect with a Time-to-First-Token under 2 seconds.
+* **Session Memory & Interactive UI:** SQLite-backed context management maintains conversation history, while the backend dynamically generates clickable follow-up questions to reduce the cognitive load on parents.
 
-- `app.py` — основной файл приложения (настройка Flask, маршруты, модели БД).
-- `requirements.txt` — список зависимостей Python.
-- `templates/` — HTML-шаблоны веб-интерфейса.
-- `static/` — статические файлы (CSS, JavaScript, изображения).
-- `data/` — директория для хранения базы данных `logoped.db`.
-- `Dataset/` — наборы данных.
-- `Dockerfile` — инструкции для сборки Docker-образа.
+## 🛠 Tech Stack
 
-## Установка и запуск
+**Backend & Data:**
+* Python / Flask
+* SQLAlchemy (ORM & SQL Injection protection)
+* SQLite (Session persistence)
 
-### Локальный запуск
+**AI & Architecture:**
+* Qwen 3.5 LLM (Hosted via Open WebUI on a dedicated server)
+* Custom RAG Pipeline
+* Heuristic Stemmer (`stem_slovak`)
 
-1. Склонируйте репозиторий:
-   ```bash
-   git clone https://git.kpi.fei.tuke.sk/kpi-zp/2026/bp.roman.nazarchuk/workspace/logoped-ai.git
-   cd logoped-ai
-   ```
+**Infrastructure:**
+* Docker & Docker Compose (Fully containerized for seamless portability)
 
-2. Создайте виртуальное окружение и активируйте его (рекомендуется):
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # Для macOS/Linux
-   # venv\Scripts\activate   # Для Windows
-   ```
+## 🏗 Architecture Flow
 
-3. Установите зависимости:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. Запустите приложение:
-   ```bash
-   python app.py
-   # или flask run
-   ```
-
-5. Откройте браузер и перейдите по адресу [http://127.0.0.1:5000](http://127.0.0.1:5000)
-
-### Запуск через Docker
-
-1. Соберите образ:
-   ```bash
-   docker build -t logoped-ai .
-   ```
-
-2. Запустите контейнер:
-   ```bash
-   docker run -p 5000:5000 logoped-ai
-   ```
-
-## Автор
-Roman Nazarchuk
+1. **User Query:** Parent selects a sound or asks a therapy-related question.
+2. **Retrieval:** The backend processes the query using the `stem_slovak` algorithm and retrieves the most relevant chunks from the logopedic knowledge base.
+3. **Prompt Injection:** Retrieved context and strict system restrictions are injected into the prompt.
+4. **LLM Generation:** The Qwen 3.5 model processes the structured prompt.
+5. **Streaming Response:** The output is streamed back to the user via SSE, accompanied by dynamically generated interactive follow-up buttons.
